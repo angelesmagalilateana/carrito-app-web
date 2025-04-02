@@ -3,62 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Deco Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Deco Home</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li>
-                    <button id="cart-button">🛒 Carrito</button>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Deco Home Logo">
+                <h1>Deco Home</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+            <button id="cart-button">🛒 Carrito</button>
+        </div>
     </header>
 
     <div class="container">
-        <aside>
+        <aside class="filters">
             <h2>Filtros</h2>
-            <input type="text" placeholder="Buscar productos">
-            <label><input type="checkbox"> Ofertas</label>
-            <label><input type="checkbox"> Envío gratis</label>
+            <section class="filters-container">
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <label><input type="checkbox"> Ofertas</label>
+                <label><input type="checkbox"> Envío gratis</label>
+            </section>
         </aside>
         
-        <main>
+        <main class= "products">
             <section class="product-grid">
                 <article class="product-card">
                     <img src="./img/lampara-techo.png" alt="Lampara de techo negra">
-                    <h4>Lampara de techo negra</h4>
-                    <p>$380</p>
+                    <h4>Lámpara Colgante Minimalista</h4>
+                    <p>$38.000</p>
                     <button>¡Lo quiero!</button>
                 </article>
                 <article class="product-card">
                     <img src="./img/lampara-techo-2.png" alt="Lampara de techo moderna">
-                    <h4>Lampara de techo moderna</h4>
-                    <p>$100</p>
+                    <h4>Lámpara de Techo Moderna</h4>
+                    <p>$100.000</p>
                     <button>¡Lo quiero!</button>
                 </article>
                 <article class="product-card">
-                    <img src="./img/vela-jazmin.png" alt="Nombre del producto">
-                    <h4>Vela aroma Jazmin</h4>
-                    <p>$100</p>
+                    <img src="./img/vela-jazmin.png" alt="Vela Jazmin">
+                    <h4>Vela Aromática de Jazmín</h4>
+                    <p>$18.000</p>
+                    <button>¡Lo quiero!</button>
+                </article>
+                <article class="product-card">
+                    <img src="./img/vela-vainilla.png" alt="Vela Vainilla">
+                    <h4>Vela Aromática de Vainilla</h4>
+                    <p>$25.000</p>
+                    <button>¡Lo quiero!</button>
+                </article>
+                <article class="product-card">
+                    <img src="./img/planta-interior.png" alt="Planta de interior">
+                    <h4>Planta de interior</h4>
+                    <p>$23.000</p>
+                    <button>¡Lo quiero!</button>
+                </article>
+                <article class="product-card">
+                    <img src="./img/cuadro-blanco-negro.png" alt="Cuadro Blanco y Negro">
+                    <h4>Cuadro Blanco y Negro</h4>
+                    <p>$27.000</p>
                     <button>¡Lo quiero!</button>
                 </article>
             </section>
         </main>
     </div>
     <footer>
-        <p><a href="#">🔄 Devolver compra</a></p>
-        <div class="social-links">
-            <a href="#">📘 Facebook</a> |
-            <a href="#">📸 Instagram</a> |
-            <a href="#">🐦 Twitter</a>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-        <p>&copy; 2025 Deco Home - Todos los derechos reservados</p>
-    </footer>
+    </footer>    
 </body>
 </html>
