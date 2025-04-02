@@ -6,6 +6,59 @@
     <title>Carrito de Compras</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Deco Home</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li>
+                    <button id="cart-button">🛒 Carrito</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h2>Filtros</h2>
+            <input type="text" placeholder="Buscar productos">
+            <label><input type="checkbox"> Ofertas</label>
+            <label><input type="checkbox"> Envío gratis</label>
+        </aside>
+        
+        <main>
+            <section class="product-grid">
+                <article class="product-card">
+                    <img src="./img/lampara-techo.png" alt="Lampara de techo negra">
+                    <h4>Lampara de techo negra</h4>
+                    <p>$380</p>
+                    <button>¡Lo quiero!</button>
+                </article>
+                <article class="product-card">
+                    <img src="./img/lampara-techo-2.png" alt="Lampara de techo moderna">
+                    <h4>Lampara de techo moderna</h4>
+                    <p>$100</p>
+                    <button>¡Lo quiero!</button>
+                </article>
+                <article class="product-card">
+                    <img src="./img/vela-jazmin.png" alt="Nombre del producto">
+                    <h4>Vela aroma Jazmin</h4>
+                    <p>$100</p>
+                    <button>¡Lo quiero!</button>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p><a href="#">🔄 Devolver compra</a></p>
+        <div class="social-links">
+            <a href="#">📘 Facebook</a> |
+            <a href="#">📸 Instagram</a> |
+            <a href="#">🐦 Twitter</a>
+        </div>
+        <p>&copy; 2025 Deco Home - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
