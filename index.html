@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Deco Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deco Home - Inicio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
-
 <body>
-    <header>
-        <div class="header-container">
-            <div class="top-row">
-                      <div class="logo-container">
-                    <img src="img/logo.png" alt="Deco Home Logo">
-                </div>
-                <button id="icon-button"><i class="fas fa-shopping-cart"></i></button>
-            </div>
-            <div class="nav-wrapper" id="nav-menu">
-                <nav class="nav-center">
-                    <ul class="nav-links">
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="productos.html">PRODUCTOS</a></li>
-                        <li><a href="#">CONTACTANOS</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header>
+    <div class="header-container">
+      <div class="top-row">
+        <div class="logo-container">
+          <img src="img/logo.png" alt="Deco Home Logo"/>
         </div>
-    </header>
-    
-    <div class="container">
-        <aside class="filters">
-            <section class="filters-container">
-                <input type="text" placeholder="¿Qué estás buscando?">
-                <label><input type="checkbox"> Ofertas</label>
-                <label><input type="checkbox"> Envío gratis</label>
-            </section>
-        </aside>
-
-        <main class="products">
-            <section class="product-grid"></section>
-        </main>
+        <button id="icon-button"><i class="fas fa-shopping-cart"></i></button>
+      </div>
+      <div class="nav-wrapper" id="nav-menu">
+        <nav class="nav-center">
+          <ul class="nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="#">CONTACTANOS</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <footer>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-    <script src="main.js"></script>
+    <div class="custom-carousel">
+      <div class="carousel-images">
+        <img src="img/carousel1.png" class="active">
+        <img src="img/carousel2.png">
+        <img src="img/carousel3.png">
+      </div>
+      <button class="carousel-button prev">&#10094;</button>
+      <button class="carousel-button next">&#10095;</button>
+    </div>
+  </header>
+      <section class="bienvenida">
+        <h1>Bienvenido a Deco Home</h1>
+        <p>Descubrí nuestras mejores decoraciones</p>
+        <a href="productos.html" class="btn-ver">Ver productos</a>
+      </section>
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
-
 </html>
