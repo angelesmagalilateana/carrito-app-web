@@ -2,59 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Deco Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deco Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="top-row">
-                <div class="logo-container">
-                    <img src="img/logo.png" alt="Deco Home Logo">
-                </div>
-                <button id="icon-button"><i class="fas fa-shopping-cart"></i></button>
-            </div>
-            <div class="nav-wrapper" id="nav-menu">
-                <nav class="nav-center">
-                    <ul class="nav-links">
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="productos.html">PRODUCTOS</a></li>
-                        <li><a href="#">CONTACTANOS</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header>
+    <div class="header-container">
+      <div class="top-row">
+        <div class="logo-container">
+          <img src="img/logo.png" alt="Deco Home Logo">
         </div>
-    </header>
-
-    <div class="container">
-        <aside class="filters">
-            <section class="filters-container">
-                <input type="text" id="filter-busqueda" placeholder="¿Qué estás buscando?">
-                <select id="order-price">
-                    <option value="default">Ordenar por</option>
-                    <option value="asc">Precio: Menor a mayor</option>
-                    <option value="desc">Precio: Mayor a menor</option>
-                </select>
-                <label><input type="checkbox" id="filter-envio"> Envío gratis</label>
-            </section>
-        </aside>
-
-        <main class="products">
-            <section class="product-grid"></section>
-        </main>
+          <a href="cart.html" id="icon-button" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </a>
+      </div>
+      <div class="nav-wrapper" id="nav-menu">
+        <nav class="nav-center">
+          <ul class="nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="#">CONTACTANOS</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <footer>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-    <script src="app.js"></script>
+  </header>
+
+  <div class="container">
+    <aside class="filters">
+      <section class="filters-container">
+        <input type="text" id="input-search-products" placeholder="¿Qué estás buscando?">
+        <label><input type="checkbox" id="delivery-free"> Envío gratis</label>
+        <select id="order-price">
+          <option value="default">Ordenar por</option>
+          <option value="asc">Precio: Menor a mayor</option>
+          <option value="desc">Precio: Mayor a menor</option>
+        </select>
+      </section>
+    </aside>
+
+    <main class="products">
+      <section class="product-grid"></section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 
 </html>

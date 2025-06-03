@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi carrito - Deco Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="top-row">
+                    <div class="logo-container">
+                        <img src="img/logo.png" alt="Deco Home Logo">
+                    </div>
+                    <a href=# id="icon-button" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="nav-wrapper" id="nav-menu">
+                    <nav class="nav-center">
+                        <ul class="nav-links">
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="productos.html">PRODUCTOS</a></li>
+                            <li><a href="#">CONTACTANOS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <template id="template-cart-card">
+                <article class="product-card">
+                    <img />
+                    <h3 class="product-name"></h3>
+                    <p class="product-price"></p>
+                    <button class="remove-button">Quitar</button>
+                </article>
+            </template>
+            <section class="product-grid"></section>
+        </main>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+        <script src="cart.js"></script>
+    </body>
+
+</html>
