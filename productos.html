@@ -26,7 +26,7 @@
           <ul class="nav-links">
             <li><a href="index.html">INICIO</a></li>
             <li><a href="productos.html">PRODUCTOS</a></li>
-            <li><a href="#">CONTACTANOS</a></li>
+            <li><a href="#" id="open-contact">CONTACTANOS</a></li>
           </ul>
         </nav>
       </div>
@@ -58,8 +58,20 @@
       <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
-
+  <script src="contact.js"></script>
   <script src="app.js"></script>
 </body>
-
+<div id="contact-modal" class="modal-overlay">
+  <div class="modal-content">
+    <button id="close-contact" class="close-button">&times;</button>
+    <h2>Contacto</h2>
+    <form class="formulario-contacto">
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Teléfono (opcional)" />
+      <textarea placeholder="Mensaje" rows="5" required></textarea>
+      <button type="submit" class="btn-ver">Enviar</button>
+    </form>
+  </div>
+</div>
 </html>
